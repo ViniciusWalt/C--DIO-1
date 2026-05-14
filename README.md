@@ -1,38 +1,34 @@
-# DIO - Trilha .NET - Fundamentos
-www.dio.me
 
-## Desafio de projeto
-Para este desafio, você precisará usar seus conhecimentos adquiridos no módulo de fundamentos, da trilha .NET da DIO.
+# DIO - .NET Fundamentals Challenge
 
-## Contexto
-Você foi contratado para construir um sistema para um estacionamento, que será usado para gerenciar os veículos estacionados e realizar suas operações, como por exemplo adicionar um veículo, remover um veículo (e exibir o valor cobrado durante o período) e listar os veículos.
+This repository contains the solution for the DIO .NET Fundamentals Challenge.
 
-## Proposta
-Você precisará construir uma classe chamada "Estacionamento", conforme o diagrama abaixo:
-![Diagrama de classe estacionamento](diagrama_classe_estacionamento.png)
+## Project Overview
 
-A classe contém três variáveis, sendo:
+The goal of this project was to develop a simple parking lot management system using C# and .NET, as proposed in the DIO .NET Fundamentals track. The system allows users to:
 
-**precoInicial**: Tipo decimal. É o preço cobrado para deixar seu veículo estacionado.
+- Register vehicles (by license plate)
+- Remove vehicles (calculating the total price based on the initial price and hourly rate)
+- List all parked vehicles
 
-**precoPorHora**: Tipo decimal. É o preço por hora que o veículo permanecer estacionado.
+The main logic is implemented in the `Estacionamento` class, following the requirements and class diagram provided in the challenge.
 
-**veiculos**: É uma lista de string, representando uma coleção de veículos estacionados. Contém apenas a placa do veículo.
+## Features
 
-A classe contém três métodos, sendo:
+- Interactive menu for user actions
+- Vehicle registration and removal with price calculation
+- List of all parked vehicles
 
-**AdicionarVeiculo**: Método responsável por receber uma placa digitada pelo usuário e guardar na variável **veiculos**.
+## Status
 
-**RemoverVeiculo**: Método responsável por verificar se um determinado veículo está estacionado, e caso positivo, irá pedir a quantidade de horas que ele permaneceu no estacionamento. Após isso, realiza o seguinte cálculo: **precoInicial** * **precoPorHora**, exibindo para o usuário.
+✅ Challenge completed! All requirements have been implemented and tested.
 
-**ListarVeiculos**: Lista todos os veículos presentes atualmente no estacionamento. Caso não haja nenhum, exibir a mensagem "Não há veículos estacionados".
+## How to Run
 
-Por último, deverá ser feito um menu interativo com as seguintes ações implementadas:
-1. Cadastrar veículo
-2. Remover veículo
-3. Listar veículos
-4. Encerrar
+1. Open the solution in Visual Studio or your preferred IDE.
+2. Build and run the project.
+3. Follow the interactive menu in the console to use the system.
 
+---
 
-## Solução
-O código está pela metade, e você deverá dar continuidade obedecendo as regras descritas acima, para que no final, tenhamos um programa funcional. Procure pela palavra comentada "TODO" no código, em seguida, implemente conforme as regras acima.
+This project was developed as part of the DIO .NET Fundamentals track. For more information, visit [DIO](https://www.dio.me/).
